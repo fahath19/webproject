@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*navbar styling start*/
+.container{
+    display: grid;
+    gap: 20px;
+
+}
+.navbar ul{
+   
+    display: grid;
+    gap: 20px;
+    list-style: none;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 10px;
+    padding: 0px 15px;
+}
+.navbar a{
+    display: block;
+    text-decoration: none;
+    font-size: 26px;
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.navbar a:hover {
+    background-color: blue;
+    color: rgb(227, 70, 70);
+}
+/*tablet view*/
+@media  screen and (max-width:768px) {
+    .navbar ul{
+        grid-template-columns: 1fr ;
+    }
+    
+}
+/*navbar styling end*/
+ /*header styling start*/
+ .header{
+    height: 100vh;
+    display: grid;
+    background-color: orange;
+    justify-content: center;
+    align-items: center;
+ }
+.he_cont{
+    text-align: center;
+   
+}
+ .he_cont .ti{
+    font-size: 70px;
+    color: rgb(31, 37, 216);
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+
+ }
+ .he_cont .li{
+    text-decoration: none;
+    outline: none;
+    border: none; 
+    font-size: 30px;
+    text-transform: capitalize;
+    border-radius: 50px;
+    padding: 19px 80px;  
+    cursor: pointer;
+    font-weight: 500;
+    
+ }
+ /*header styling end*/
+
+ /*about styling start*/
+ 
+
+.about{
+    background-color: rgb(62, 62, 62);
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+}
+.about_img{
+    width: 90%;
+
+}
+.about_img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+.about_img .ab_par{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 18px;
+    color: whitesmoke;
+    text-transform: capitalize;
+}
+.about_content .ab_tit{
+
+    margin-top:30px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 700;
+    color: whitesmoke;
+
+}
+.about_content .a_p{
+    text-align: justify;
+    width: 90%;
+    font-size: 16px;
+    color: whitesmoke;
+
+}
+.about_content .btnd{
+      margin: 20px 10px;
+    outline: none;
+   font-size: 18px;
+    border: none;
+    padding: 10px 80px;
+    border-radius: 30px;
+    text-transform: capitalize;
+    background-color: skyblue;
+    color: white;
+
+}
+
+
+/*tablet view*/
+@media  screen and (max-width:768px) {
+    .about{
+        grid-template-columns: 1fr;
+
+    }
+    .ab_tit{
+        text-align: center;
+    }
+    .about_img  .ab_par{
+        width: 100%;
+        margin: 0 auto;
+
+        text-align: center;
+    }
+    .a_p{
+        margin: 0 auto;
+    }
+    .about_content .btnd{
+        display: inline;
+        text-align: center;
+        margin-left: 20%;
+    }
+}
+ /*about styling end*/
+ /*service styling start*/
+
+.service{
+       display: grid;   
+       gap:1rem;
+       grid-template-areas: 
+       'one one  two'
+       'three four five';
+}
+.box{
+     margin: 5px;
+     border-radius: 15px;
+
+}
+.icon{
+    display: block;
+    text-align: center;
+    margin: 10px;
+}
+.icon .ic{
+    font-size: 30px;
+    padding: 6px;
+}
+.sti{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+.sp{
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+}
+.one{
+background-color: skyblue;
+grid-area: one;
+}
+.two{
+   background-color: palegreen;
+grid-area: two;
+
+}
+.three{
+ background-color: lightcoral;
+ grid-area: three;
+
+}
+.four{
+     background-color: lightyellow;
+     grid-area: four;
+
+    }
+.five{
+   background-color: violet;
+   grid-area: five;
+
+} 
+#i1{
+ color: blue;
+}
+#i2{
+ color: rgb(23, 125, 23);
+}
+#i3{
+ color: red;
+}
+#i4{
+color:yellow ;
+}
+#i5{
+ color: rebeccapurple;
+}
+
+/*mobile view*/
+.service{
+    grid-template-areas: 
+    'one'
+    'two'
+    'three'
+    'four'
+    'five';
+}
+
+
+
+
+
+
+  /*service styling end*/
+  /*features styling start*/
+.features{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    background-color: lightpink;
+    padding: 30px;
+}
+.feat_box{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    margin: 20px;
+}
+.feat_box h1{
+    font-size: 40px;
+    font-weight: 700;
+       color: lightpink;
+
+}
+.feat_box h2{
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+   color: lightpink;
+    text-transform: capitalize;
+
+}
+.feat_box p{
+    padding: 10px;
+    text-align: justify;
+    font-size: 17px;
+    color: lightslategray;
+}
+
+  /* features styling end*/
+
+/*contact section start*/
+.contact{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    padding: 20px;
+}
+.contact p{
+    text-align: center;
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+   color: white;
+    margin: 0 auto;
+}
+.icon{
+    font-size: 60px;
+    font-weight: 800;
+    display: block;
+    margin: 50px auto;
+    text-align: center;
+}
+.contact p:nth-of-type(1){
+    background-color: blue;
+}
+.contact p:nth-of-type(1):hover{
+    border: 3px dotted blue;
+    background-color: white;
+    color: blue;
+}
+.contact p:nth-of-type(2){
+    background-color: orchid;
+}
+.contact p:nth-of-type(2):hover{
+    border: 3px dotted orchid;
+    background-color: white;
+    color: orchid;
+}
+.contact p:nth-of-type(3){
+    background-color: rgb(16, 140, 16);
+}
+.contact p:nth-of-type(3):hover{
+    border: 3px dotted rgb(16, 140, 16);
+    background-color: white;
+    color: rgb(16, 140, 16);
+}
+.contact p:nth-of-type(4){
+    background-color: rgb(237, 10, 10);
+}
+.contact p:nth-of-type(4):hover{
+    border: 3px dotted rgb(237, 10, 10);
+    background-color: white;
+    color: rgb(237, 10, 10);
+}
+/*contact section end*/
+
+
+
+
+/*footer section start*/
+.footer{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.footer p{
+    padding: 20px;
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: white;
+}
+
+/*footer section end*/
